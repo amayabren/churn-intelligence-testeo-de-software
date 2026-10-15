@@ -58,19 +58,19 @@ También se incorporaron dos tipos de pruebas adicionales:
 
 Instalar las dependencias:
 
-​`bash
+​`
 pip install -r requirements.txt
 ​`
 
 Ejecutar todas las pruebas:
 
-​`bash
+​`
 python -m pytest -v
 ​`
 
 Para visualizar los resultados detallados:
 
-​`bash
+​`
 python -m pytest -v -s
 ​`
 
@@ -85,4 +85,3 @@ Las funcionalidades de consulta individual y dashboard permanecen pendientes de 
 ## Evidencias
 
 Las capturas de ejecución se almacenan en evidencias/ y la documentación de testing en reportes/.
-Instalar dependencias: `pip install -r requirements.txt`.
