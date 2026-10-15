@@ -4,6 +4,15 @@ Repositorio de pruebas automatizadas del proyecto Churn Intelligence SaaS, desar
 
 El objetivo es validar el funcionamiento del prototipo predictivo de Churn, desde la carga y limpieza de datos hasta la generación de predicciones mediante Random Forest + SMOTE.
 
+**Integrantes:**
+
+- Amaya, Brenda
+- Amaya, Paula
+- Cortez, Valeria
+- Manrique Aguad, Agustín
+- Martinez, Cristian
+- Sudañez, Isaias Emanuel
+
 ## Tecnologías utilizadas
 
 - Python
@@ -13,6 +22,7 @@ El objetivo es validar el funcionamiento del prototipo predictivo de Churn, desd
 
 ## Estructura del proyecto
 
+```text
 churn-intelligence-testing/
 ├── data/
 │ └── telecom_dirty.csv
@@ -32,6 +42,7 @@ churn-intelligence-testing/
 ├── reportes/
 ├── requirements.txt
 └── README.md
+```
 
 ## Pruebas implementadas
 
@@ -47,15 +58,21 @@ También se incorporaron dos tipos de pruebas adicionales:
 
 Instalar las dependencias:
 
+​`bash
 pip install -r requirements.txt
+​`
 
 Ejecutar todas las pruebas:
 
+​`bash
 python -m pytest -v
+​`
 
 Para visualizar los resultados detallados:
 
+​`bash
 python -m pytest -v -s
+​`
 
 ## Resultados
 
