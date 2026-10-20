@@ -25,11 +25,13 @@ app = FastAPI(
     version="1.0.0",
 )
 
+# Permite localhost y el dominio desplegado en Vercel por defecto
 DEFAULT_ORIGINS = (
     "http://localhost:3000,"
     "http://127.0.0.1:3000,"
     "http://localhost:5173,"
-    "http://127.0.0.1:5173"
+    "http://127.0.0.1:5173,"
+    "https://frontend-inky-two-17.vercel.app"
 )
 
 app.add_middleware(
@@ -41,10 +43,11 @@ app.add_middleware(
             DEFAULT_ORIGINS,
         ).split(",")
         if origin.strip()
-    ],
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["Content-Type", "Accept"],
+    ]
+    or ["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
