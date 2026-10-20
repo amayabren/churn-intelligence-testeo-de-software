@@ -6,45 +6,45 @@ El proyecto integra el procesamiento de datos, un modelo predictivo basado en Ra
 
 ## Integrantes
 
-* Amaya, Brenda
-* Amaya, Paula
-* Cortez, Valeria
-* Manrique Aguad, Agustín
-* Martinez, Cristian
-* Sudañez, Isaias Emanuel
+- Amaya, Brenda
+- Amaya, Paula
+- Cortez, Valeria
+- Manrique Aguad, Agustín
+- Martinez, Cristian
+- Sudañez, Isaias Emanuel
 
 ## Tecnologías utilizadas
 
 ### Datos y Machine Learning
 
-* Python
-* Pandas y NumPy
-* Scikit-learn
-* imbalanced-learn
-* Random Forest
-* SMOTE
+- Python
+- Pandas y NumPy
+- Scikit-learn
+- imbalanced-learn
+- Random Forest
+- SMOTE
 
 ### Backend
 
-* FastAPI
-* Python
-* Pytest
+- FastAPI
+- Python
+- Pytest
 
 ### Frontend
 
-* React
-* JavaScript
-* Vite
+- React
+- JavaScript
+- Vite
 
 ### Testing
 
-* Pytest
-* Pruebas funcionales y de integración
-* Pruebas de carga sobre el procesamiento de datos
+- Pytest
+- Pruebas funcionales y de integración
+- Pruebas de carga sobre el procesamiento de datos
 
 ## Estructura del proyecto
 
-`
+```text
 churn-intelligence-testing/
 ├── app/                    # Aplicación integrada del prototipo
 ├── frontend/               # Interfaz web
@@ -67,90 +67,82 @@ churn-intelligence-testing/
 ├── reportes/
 ├── requirements.txt
 └── README.md
-
-`
+```
 
 > La estructura representa las carpetas principales del repositorio. Los archivos internos de `app/`, `frontend/` y `backend/` se organizan según la implementación actual.
 
 ## Funcionalidades del prototipo
 
-* Procesamiento y preparación de datos para el análisis de churn.
-* Predicción individual de abandono a partir de las características de un cliente.
-* Predicción sobre conjuntos de clientes mediante archivos CSV.
-* Visualización de resultados de predicción a través de la interfaz web.
-* Exposición de funcionalidades predictivas mediante una API.
-* Pruebas automatizadas para componentes del procesamiento de datos y del modelo.
+- Procesamiento y preparación de datos para el análisis de churn.
+- Predicción individual de abandono a partir de las características de un cliente.
+- Predicción sobre conjuntos de clientes mediante archivos CSV.
+- Visualización de resultados de predicción a través de la interfaz web.
+- Exposición de funcionalidades predictivas mediante una API.
+- Pruebas automatizadas para componentes del procesamiento de datos y del modelo.
 
 ## Instalación y ejecución
 
 ### 1. Requisitos previos
 
-* Python instalado.
-* Node.js y npm instalados.
-* Git para clonar el repositorio.
+- Python instalado.
+- Node.js y npm instalados.
+- Git para clonar el repositorio.
 
 ### 2. Configurar el entorno virtual de Python
 
 Desde la raíz del repositorio, crear el entorno virtual:
 
-`
+```bash
 python -m venv .venv
-
-`
+```
 
 Activarlo según el sistema operativo.
 
 **Windows — Git Bash:**
 
-`
+```bash
 source .venv/Scripts/activate
-
-`
+```
 
 **Windows — CMD:**
 
 ```cmd
 .venv\Scripts\activate
-
 ```
 
 **Linux o macOS:**
 
-`
+```bash
 source .venv/bin/activate
-`
+```
 
 Con el entorno virtual activado, instalar las dependencias:
 
-`
+```bash
 python -m pip install -r requirements.txt
-
-`
+```
 
 ### 3. Ejecutar las pruebas automatizadas
 
 Desde la raíz del repositorio y con el entorno virtual activado:
 
-`
+```bash
 python -m pytest -v
-
-`
+```
 
 Para visualizar también las salidas generadas durante la ejecución:
 
-`
+```bash
 python -m pytest -v -s
-
-`
+```
 
 ### 4. Ejecutar el backend
 
 Ingresar a la carpeta del backend:
 
-`
+```bash
 cd backend
-
-`
+```
 
 Activar el entorno virtual desde la raíz antes de ingresar a esta carpeta, si todavía no está activo. Luego ejecutar el comando de inicio correspondiente a la configuración actual del proyecto.
 
@@ -160,24 +152,21 @@ Activar el entorno virtual desde la raíz antes de ingresar a esta carpeta, si t
 
 Ingresar a la carpeta del frontend:
 
-`
+```bash
 cd frontend
-
-`
+```
 
 Instalar las dependencias de Node.js:
 
-`
+```bash
 npm install
-
-`
+```
 
 Iniciar el servidor de desarrollo:
 
-`
+```bash
 npm run dev
-
-`
+```
 
 La dirección local para acceder a la interfaz será la que indique Vite en la terminal.
 
@@ -187,26 +176,26 @@ La dirección local para acceder a la interfaz será la que indique Vite en la t
 
 Se desarrollaron pruebas automatizadas para validar:
 
-* La carga de archivos CSV.
-* El tratamiento de valores nulos.
-* La eliminación de registros duplicados.
-* La preparación y ejecución del pipeline de datos.
-* La generación de predicciones.
-* La integración del flujo de procesamiento y modelado.
-* El procesamiento de distintos volúmenes de registros.
+- La carga de archivos CSV.
+- El tratamiento de valores nulos.
+- La eliminación de registros duplicados.
+- La preparación y ejecución del pipeline de datos.
+- La generación de predicciones.
+- La integración del flujo de procesamiento y modelado.
+- El procesamiento de distintos volúmenes de registros.
 
 También se incorporaron pruebas adicionales:
 
-* **Integración:** ejecución del flujo con datos sintéticos y con el dataset original.
-* **Carga:** evaluación del procesamiento con 1.000, 5.000 y 10.000 registros, midiendo tiempos y memoria.
+- **Integración:** ejecución del flujo con datos sintéticos y con el dataset original.
+- **Carga:** evaluación del procesamiento con 1.000, 5.000 y 10.000 registros, midiendo tiempos y memoria.
 
 ## Resultados de testing
 
 En la ejecución documentada se obtuvieron los siguientes resultados:
 
-* **26 pruebas automatizadas aprobadas**, sin fallos.
-* Tiempo total de ejecución: **11,65 segundos**.
-* En la prueba de integración con el dataset original se obtuvo un *Accuracy* de **97,25 %** y un **ROC-AUC de 0,9918**.
+- **26 pruebas automatizadas aprobadas**, sin fallos.
+- Tiempo total de ejecución: **11,65 segundos**.
+- En la prueba de integración con el dataset original se obtuvo un *Accuracy* de **97,25 %** y un **ROC-AUC de 0,9918**.
 
 Estos resultados corresponden a la ejecución de las pruebas registradas y no representan una garantía de rendimiento para todos los conjuntos de datos o entornos.
 
@@ -231,8 +220,8 @@ La cobertura de testing de la interfaz web y de todos los flujos completos entre
 
 ## Evidencias y reportes
 
-* `evidencias/`: capturas y materiales de respaldo de las ejecuciones.
-* `reportes/`: documentación de las pruebas y sus resultados.
+- `evidencias/`: capturas y materiales de respaldo de las ejecuciones.
+- `reportes/`: documentación de las pruebas y sus resultados.
 
 ## Materias integradas
 
