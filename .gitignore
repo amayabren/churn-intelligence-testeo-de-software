@@ -3,3 +3,9 @@ __pycache__/
 .venv/
 data/*.csv
 !data/test/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+.env
