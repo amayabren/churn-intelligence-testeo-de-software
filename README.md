@@ -1,6 +1,6 @@
 # Churn Intelligence SaaS
 
-Prototipo de análisis y predicción de abandono de clientes (*churn*), desarrollado para las materias **Testeo de Software** y **Práctica Profesionalizante I**, durante el año 2026.
+Prototipo de análisis y predicción de abandono de clientes (_churn_), desarrollado para las materias **Testeo de Software** y **Práctica Profesionalizante I**, durante el año 2026.
 
 El proyecto integra el procesamiento de datos, un modelo predictivo basado en Random Forest con SMOTE y una interfaz web para consumir las funcionalidades de predicción. Además, incluye pruebas automatizadas para validar los componentes del procesamiento de datos y del modelo.
 
@@ -64,7 +64,6 @@ churn-intelligence-testing/
 │   ├── test_integration.py
 │   └── test_load.py
 ├── evidencias/
-├── reportes/
 ├── requirements.txt
 └── README.md
 ```
@@ -195,7 +194,7 @@ En la ejecución documentada se obtuvieron los siguientes resultados:
 
 - **26 pruebas automatizadas aprobadas**, sin fallos.
 - Tiempo total de ejecución: **11,65 segundos**.
-- En la prueba de integración con el dataset original se obtuvo un *Accuracy* de **97,25 %** y un **ROC-AUC de 0,9918**.
+- En la prueba de integración con el dataset original se obtuvo un _Accuracy_ de **97,25 %** y un **ROC-AUC de 0,9918**.
 
 Estos resultados corresponden a la ejecución de las pruebas registradas y no representan una garantía de rendimiento para todos los conjuntos de datos o entornos.
 
@@ -218,10 +217,9 @@ Las pruebas documentadas corresponden a los componentes del procesamiento de dat
 
 La cobertura de testing de la interfaz web y de todos los flujos completos entre frontend y backend debe considerarse por separado de los resultados de las pruebas automatizadas ya registradas.
 
-## Evidencias y reportes
+## Evidencias
 
 - `evidencias/`: capturas y materiales de respaldo de las ejecuciones.
-- `reportes/`: documentación de las pruebas y sus resultados.
 
 ## Materias integradas
 
